@@ -1,0 +1,35 @@
+#include<stdio.h>
+int main(void)
+{
+    int x,y,c,d;
+    printf(" for addition c=1\n for substraction c=2\n for division c=3\n for multiplication c=4\n for modulus c=5\n");
+    printf("Enter c:");
+    scanf("%d",&c);
+    printf("Enter x:");
+    scanf("%d",&x);
+    printf("Enter y:");
+    scanf("%d",&y);
+    if(c==1)
+    {
+       d = x+y;
+    }
+    else if(c==2)
+    {
+        d = x-y;
+    }
+    else if(c==3)
+    {
+        d = x/y;
+    }
+    else if(c==4)
+    {
+        d=x*y;
+    }
+    else if(c==5)
+    {
+        d=x%y;
+    }
+    printf("Your answer is %d",d);
+    
+    
+}
