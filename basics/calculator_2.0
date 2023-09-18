@@ -1,0 +1,34 @@
+#include<stdio.h>
+int main(void)
+{
+    char operator;
+    int x,y,a;
+    printf("given operator are (+) or (-) or (/) or  (*) or (%%) \n");
+    printf("Enter your desired operator: ");
+    scanf(" %c",&operator);
+    printf("Enter x:");
+    scanf("%d",&x);
+    printf("Enter y:");
+    scanf("%d",&y);
+    // printf("%c",operator);
+    switch(operator)
+    {
+        case '+':
+          a=x+y;
+            break;
+        case '-':
+            a=x-y;
+            break;
+        case '/':
+            a=x/y;
+            break;
+        case '*':
+        a=x*y;
+            break;
+            
+        default : 
+        {printf("Your did not enter the following operators (+) or (-) or (/) or  (*)\n");  
+        printf("Please try again");  }       
+    }
+    printf("Your answer is %d",a);
+}
